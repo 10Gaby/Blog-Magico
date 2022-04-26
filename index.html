@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="ie.edge">
+    <title>Blog Mágico - Inicio</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="shortcut icon" href="#">
+
+<body>
+
+    <header>
+        <div class="navbar">
+    
+            <div class="logo"><h2>Blog Mágico</h2></div>
+
+            <div class="bottom">
+                <input type="checkbox" id="btn-menu">
+                <label for="btn-menu"><p>=</p></label>
+            </div>
+
+            <nav class="menu" id="menu">
+                <hr>
+                <ul class="menu_item">
+                    <li><a href="index.html" class="presente">Inicio</a></li>
+                    <li><a href="Aplicaciones.html">Aplicaciones</a></li>
+                    <li><a href="#">Plantillas</a></li>
+                    <li><a href="#">Recursos</a></li>
+                </ul>
+            </nav>
+    
+        </div>
+
+        <h1>Aesthetic</h1>    
+    </header>
+
+    <p class="sub-titulo">En este blog encontraras tips, apps, artículos, aplicaciones plantillas y muchas más herramientas para ti.</p>
+
+    <section class="global-container">
+        <div class="container-post">
+
+            <input type="radio" id="TODOS" name="categories" value="TODOS" checked>
+            <input type="radio" id="TIPS" name="categories" value="TIPS">
+            <input type="radio" id="APPS" name="categories" value="APPS">
+            <input type="radio" id="PERSONALIZACIÓN" name="categories" value="PERSONALIZACIÓN">
+            <input type="radio" id="IDEAS" name="categories" value="IDEAS">
+            <input type="radio" id="TUTORIALES" name="categories" value="TUTORIALES">
+    
+            <div class="container-category">
+                <label for="TODOS">TODOS</label>
+                <label for="TIPS">TIPS</label>
+                <label for="APPS">APPS</label>
+                <label for="PERSONALIZACIÓN">PERSONALIZACIÓN</label>
+                <label for="IDEAS">IDEAS</label>
+                <label for="TUTORIALES">TUTORIALES</label>
+            </div>
+
+
+            <div class="posts">
+
+                <div class="post" data-category="APPS">
+    
+                    <div class="ctn-img">
+                        <img src="#" alt="">
+                    </div>
+                    <h2>¡Las mejores apps para editar tus imagenes!</h2>
+                    <span>24 Abril 2022</span>
+                    <ul class="ctn-tag">
+                        <li>APPS</li>
+                        <li>RECURSOS</li>
+                    </ul>
+                    <a href="articulo.html"><button>Leer más</button></a>
+    
+                </div>
+    
+                <div class="post" data-category="TIPS APPS PERSONALIZACIÓN">
+    
+                    <div class="ctn-img"><img src="#" alt=""></div>
+                    <h2>Como personalizar tu móvil Aesthetic 😍</h2>
+                    <span>26 febrero 2022</span>
+                    <ul class="ctn-tag">
+                        <li>TIPS</li>
+                        <li>APPS</li>
+                        <li>PERSONALIZACIÓN</li>
+                    </ul>
+                    <a href="Articulos/personalizar-movil.html"><button>leer más</button></a>
+    
+                </div>
+
+                <div class="post" data-category="TIPS APPS TUTORIALES">
+    
+                    <div class="ctn-img"><img src="#" alt=""></div>
+                    <h2>Como usar Notion</h2>
+                    <span>26 febrero 2022</span>
+                    <ul class="ctn-tag">
+                        <li>TIPS</li>
+                        <li>APPS</li>
+                        <li>TUTORIALES</li>
+                    </ul>
+                    <a href="Articulos/personalizar-movil.html"><button>leer más</button></a>
+    
+                </div>
+                
+    
+            </div>
+    
+        </div>
+    
+    </div>
+
+    </section>
+
+    <footer>
+        <h4>© 2022 Blog Mágico - Todos los Derechos Reservados</h4>
+
+    </footer>
+
+    <script>
+        var bottom = document.getElementById("btn-menu");
+        
+
+        bottom.addEventListener('click', function(){
+            var header = document.querySelector(".menu");
+            header.classList.toggle("click")
+        })
+    </script>
+
+    <script src="js/buscador.js"></script>
+
+</body>
+
+
+</html>
+

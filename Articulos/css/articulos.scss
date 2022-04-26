@@ -1,0 +1,79 @@
+//TIPOGRAFÍAS
+
+//Forum
+@import url('https://fonts.googleapis.com/css2?family=Forum&display=swap');
+
+//Lora
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+
+//Maven Pro
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700;800;900&display=swap');
+
+//Variables
+
+$sub-titulos: 'Lora', serif;
+
+@mixin titulos{
+    font-family: 'Forum', cursive;
+}
+
+@mixin textos{
+    font-family: 'Maven Pro', sans-serif;
+    line-height: 2em;
+}
+
+.global-container{
+    max-width: 75%;
+    margin: 0 auto;
+    padding: 100px 0px;
+    background-color: white;
+}
+
+.content{
+    margin: 0px 100px;
+}
+
+.content p{
+    @include textos;
+}
+
+.content img{
+    display: block;
+    width: 300px;
+    padding-top: 20px;
+    margin: 0 auto;
+}
+
+.contentdivisor{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: 40px 0px;
+    gap: 30px;
+}
+
+@mixin responsive{
+    .article{
+        padding: 20px;
+    }
+    .content{
+        margin: 0 50px;
+    }
+    .contentdivisor{
+        grid-template-columns: 100%;
+        margin: 0;
+    }
+    .content img{
+        width: 250px;
+    }
+}
+
+@media screen and (max-width:1080px) and (min-width: 721px){
+    @include responsive;
+}
+
+@media screen and (max-width: 720px){
+    @include responsive;
+    .global-container{
+        max-width: 85%;
+    }
+}

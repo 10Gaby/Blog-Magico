@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="ie.edge">
+    <title>Blog Mágico - Aplicaciones</title>
+    <link rel="stylesheet" href="css/aplicaciones.css">
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="shortcut icon" href="#">
+
+<body>
+
+    <header>
+        <div class="navbar">
+    
+            <div class="logo"><h2>Blog Mágico</h2></div>
+
+            <div class="bottom">
+                <input type="checkbox" id="btn-menu">
+                <label for="btn-menu"><p>=</p></label>
+            </div>
+
+            <nav class="menu" id="menu">
+                <hr>
+                <ul class="menu_item">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="Aplicaciones.html" class="presente">Aplicaciones</a></li>
+                    <li><a href="#">Plantillas</a></li>
+                    <li><a href="#">Recursos</a></li>
+                </ul>
+            </nav>
+    
+        </div>
+
+        <h1>Aplicaciones</h1>    
+    </header>
+
+    <p class="sub-titulo">En este blog encontraras tips, apps, artículos, aplicaciones plantillas y muchas más herramientas para ti.</p>
+
+    <section class="global-container">
+        <div class="container-post">
+
+            <input type="radio" id="TODOS" name="categories" value="TODOS" checked>
+            <input type="radio" id="ESTUDIO" name="categories" value="ESTUDIO">
+            <input type="radio" id="EDITORES" name="categories" value="EDITORES">
+            <input type="radio" id="ESCRITURA" name="categories" value="ESCRITURA">
+            <input type="radio" id="PERSONALIZACIÓN" name="categories" value="PERSONALIZACIÓN">
+            <input type="radio" id="RECURSOS" name="categories" value="RECURSOS">
+    
+            <div class="container-category">
+                <label for="TODOS">TODOS</label>
+                <label for="ESTUDIO">ESTUDIO</label>
+                <label for="EDITORES">EDITORES</label>
+                <label for="ESCRITURA">ESCRITURA</label>
+                <label for="PERSONALIZACIÓN">PERSONALIZACIÓN</label>
+                <label for="RECURSOS">RECURSOS</label>
+            </div>
+
+
+            <div class="posts">
+    
+
+                <div class="post" data-category="ESTUDIO">
+    
+                    <div class="ctn-img"><img src="img/Apps/Time Planner.png" alt="Time Planner"></div>
+                    <h2>Time Planner</h2>
+                    <span>Planeador, agenda, lista de tareas.</span>
+                    <ul class="ctn-tag">
+                        <li>ESTUDIO</li>
+                    </ul>
+                    <a href="#"><button>Descargar</button></a>
+    
+                </div>
+
+                <div class="post" data-category="ESTUDIO">
+    
+                    <div class="ctn-img"><img src="img/Apps/Agenda Escolar.png" alt=""></div>
+                    <h2>Agenda Escolar</h2>
+                    <span>Organiza tu vida académica y ten todo bajo control.</span>
+                    <ul class="ctn-tag">
+                        <li>ESTUDIO</li>
+                    </ul>
+                    <a href="#"><button>Descargar</button></a>
+    
+                </div>
+
+                <div class="post" data-category="ESTUDIO">
+    
+                    <div class="ctn-img"><img src="img/Apps/Notebloc Scanner App.png" alt=""></div>
+                    <h2>Noteblock Scanner App</h2>
+                    <span>El mejor escáner de documentos, apuntes y dibujos.</span>
+                    <ul class="ctn-tag">
+                        <li>ESTUDIO</li>
+                    </ul>
+                    <a href="Articulos/personalizar-movil.html"><button>Descargar</button></a>
+    
+                </div>
+    
+                <div class="post" data-category="ESTUDIO">
+    
+                    <div class="ctn-img"><img src="img/Apps/Cram Flashcards.jfif" alt=""></div>
+                    <h2>Cram Flashcards</h2>
+                    <span>Crea tarjetas con información, para memorizar y aprender.</span>
+                    <ul class="ctn-tag">
+                        <li>ESTUDIO</li>
+                    </ul>
+                    <a href="Articulos/personalizar-movil.html"><button>Descargar</button></a>
+    
+                </div>
+                
+    
+            </div>
+    
+        </div>
+    
+    </div>
+
+    </section>
+
+    <footer>
+        <h4>© 2022 Blog Mágico - Todos los Derechos Reservados</h4>
+
+    </footer>
+
+    <script>
+        var bottom = document.getElementById("btn-menu");
+        
+
+        bottom.addEventListener('click', function(){
+            var header = document.querySelector(".menu");
+            header.classList.toggle("click")
+        })
+    </script>
+
+    <script src="js/buscador.js"></script>
+
+</body>
+
+
+</html>
+

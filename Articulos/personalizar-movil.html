@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="ie.edge">
+    <title>Blog Mágico</title>
+    <link rel="stylesheet" href="css/articulos.css">
+    <link rel="stylesheet" href="../css/general.css">
+    <link rel="shortcut icon" href="#">
+
+    <!--TIPOGRAFÍAS-->
+    <!--Lora-->
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,400;1,500;1,600;1,700&display=swap" rel="stylesheet"></head>
+    <!--Forum-->
+    <link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet">
+
+<body>
+
+    <header>
+        <div class="navbar">
+    
+            <div class="logo"><h2>Blog Mágico</h2></div>
+
+            <div class="bottom">
+                <input type="checkbox" id="btn-menu">
+                <label for="btn-menu"><p>=</p></label>
+            </div>
+
+            <nav class="menu" id="menu">
+                <hr>
+                <ul class="menu_item">
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="#">Aplicaciones</a></li>
+                    <li><a href="#">Plantillas</a></li>
+                    <li><a href="#">Recursos</a></li>
+                </ul>
+            </nav>
+    
+        </div>
+
+        <h1 class="article">Personalizar tu móvil Aesthetic</h1>    
+    </header>
+
+    <section class="global-container">
+
+        <div class="content">
+            <p>1.Lo primero que vamos a hacer es descargar la app <a href="https://play.google.com/store/apps/details?id=com.myicon.themeiconchanger&hl=es" target="_blank">MyICON</a>.
+                <br>2.Vamos a buscar los iconos de las apps que tengamos por internet y lo descargamos (imágenes normales).
+                <br>3.Abrimos MyICON, seleccionamos un tema si queremos, si no pasamos al siguiente paso.
+            </p>
+
+            <div class="contentdivisor">
+                <div>
+                    <p>4.En la parte inferior (abajo) nos aparecerá inicio y mis iconos, click en mis iconos.</p>
+                    <img src="img/personalizar-movil/paso4.jfif" alt="paso 4">
+                </div>
+                <div>
+                    <p>5. Luego te aparecerán tus iconos, le vamos a dar click arriba en el botón que dice: "Iconos de bricolaje" </p>
+                    <img src="img/personalizar-movil/paso5.jfif" alt="paso 5">
+                </div>
+            </div>
+
+            <p>6.Te va a aparecer este menú, haz click en el más, para añadir los iconos de las apps que descargaste.</p>
+            <img src="img/personalizar-movil/paso6.jfif" alt="paso 6">
+
+            <div class="contentdivisor">
+                <div>
+                    <p>7.Una vez añadidos los iconos, vamos a elegir un color de la parte que dice "Color de filtro"</p>
+                    <img src="img/personalizar-movil/paso7.jfif" alt="paso 7">
+                </div>
+                <div>
+                    <p>8.Finalmente, los iconos tomaran el color que hayas elegido, solo hara falta dar click en guardar.</p>
+                    <img src="img/personalizar-movil/paso8.jfif" alt="paso 8">
+                </div>
+            </div>
+            <p>¡Listo! Ya tienes tu móvil personalizado.</p>
+        </div>
+
+    </section>
+
+    <footer>
+        <h4>© 2022 Blog Mágico - Todos los Derechos Reservados</h4>
+    </footer>
+
+    <script>
+        var bottom = document.getElementById("btn-menu");
+        
+
+        bottom.addEventListener('click', function(){
+            var header = document.querySelector(".menu");
+            header.classList.toggle("click")
+        })
+    </script>
+</body>
+</html>
