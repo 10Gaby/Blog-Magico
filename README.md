@@ -1,0 +1,2 @@
+# Blog-Magico
+Blog Aesthetic
