@@ -11,7 +11,7 @@ body {
 }
 
 header {
-  background-image: url(../img/Portada.jpg);
+  background-image: url(../img/Portada-Filtro.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   font-family: 'Lora', serif;
@@ -238,7 +238,7 @@ h1.article {
 }
 
 footer {
-  background-image: url(../img/Portada.jpg);
+  background-image: url(../img/Portada-Filtro.jpg);
   height: 100px;
   background-repeat: no-repeat;
   background-size: cover;
