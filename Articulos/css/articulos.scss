@@ -51,6 +51,33 @@ $sub-titulos: 'Lora', serif;
     gap: 30px;
 }
 
+.content button{
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    padding: 10px 20px;
+    width: 80%;
+    font-size: 16px;
+    background: #bc98f3;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.content button:hover{
+    background: rgba(33, 0, 54, 0.7);
+}
+
+.button{
+    text-decoration: none;
+}
+
+p.button{
+    text-align: center;
+}
+
 @mixin responsive{
     .article{
         padding: 20px;

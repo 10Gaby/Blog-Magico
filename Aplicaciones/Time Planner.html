@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="ie.edge">
+    <title>Blog Mágico</title>
+    <link rel="stylesheet" href="../Articulos/css/articulos.css">
+    <link rel="stylesheet" href="../css/general.css">
+    <link rel="shortcut icon" href="#">
+
+    <!--TIPOGRAFÍAS-->
+    <!--Lora-->
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,400;1,500;1,600;1,700&display=swap" rel="stylesheet"></head>
+    <!--Forum-->
+    <link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet">
+
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+</head>
+
+<body>
+
+    <header>
+        <div class="navbar">
+    
+            <div class="logo"><h2>Blog Mágico</h2></div>
+
+            <div class="bottom">
+                <input type="checkbox" id="btn-menu">
+                <label for="btn-menu"><p>=</p></label>
+            </div>
+
+            <nav class="menu" id="menu">
+                <hr>
+                <ul class="menu_item">
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="#">Aplicaciones</a></li>
+                    <li><a href="#">Plantillas</a></li>
+                    <li><a href="#">Recursos</a></li>
+                </ul>
+            </nav>
+    
+        </div>
+
+        <h1 class="article">Time Planner</h1>    
+    </header>
+
+    <section class="global-container">
+
+        <div class="content">
+            <div class="contentdivisor">
+                <div>
+                    <!-- Swiper -->
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="img/Time Planner/Muestra1.jfif" alt="Listas de cosas por hacer"></div>
+                        <div class="swiper-slide"><img src="img/Time Planner/Muestra2.jfif" alt="Estadísticas"></div>
+                        <div class="swiper-slide"><img src="img/Time Planner/Muestra3.jfif" alt="Vista mensual"></div>
+                        <div class="swiper-slide"><img src="img/Time Planner/Muestra4.jfif" alt="Plan"></div>
+                        <div class="swiper-slide"><img src="img/Time Planner/Muestra5.jfif" alt="Recordatorios"></div>
+                        <div class="swiper-slide"><img src="img/Time Planner/Muestra6.jfif" alt="Agenda"></div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+
+                <div><p>Sin duda debes descargar esta app, aparte de su estilo y aspecto agradable, te será de gran ayuda, para organizarte y lo mejor no tiene anuncios, la app en su modo gratuito cuenta con lo siguiente:
+
+                    <br>• Herramienta de manejo de tiempo rápida y optimizada
+                    
+                    <br>• Sin ningún tipo de anuncios (¡en serio, ninguno!)
+                    
+                    <br>• Conveniente agenda que incluye modelo de "linea de tiempo" y "parte del día"
+                    
+                    <br>• Fácil medidor de tiempo de burbujas
+                    
+                    <br>• Personaliza tus actividades con carga de iconos y colores diversos
+                    
+                    <br>• Estructura jerárquica de categorías y subcategorías
+                    
+                    <br>• Recordatorios altamente personalizables
+                    
+                    <br>• Marcas de prioridad en las tareas
+                    
+                    <br>• Notas con formato rico
+                    
+                    <br>• Alarma + capcha para evitar procrastinar
+                    
+                    <br>• Calendario lunar
+                    
+                    <br>• Importa eventos desde Calendario de Google
+                    
+                    <br>• Respaldos
+                </p></div>
+            </div>
+
+            <a href="https://play.google.com/store/apps/details?id=com.albul.timeplanner&hl=es_CO&gl=US" class="button" target="_blank"><button>Descargar Original</button></a>
+            <p class="button">Se le redireccionara a la Play Store para que lo descargue desde allí</p>
+
+            <a href="https://drive.google.com/file/d/1ACM0AQcRGS_Gsl5E1BXqX44MDyOsGFeH/view" class="button" target="_blank"><button>Descargar Mod</button></a>
+            <p class="button">Se le redireccionara a drive, desde allí podrá descargar el modo pro, en una versión más antigua, es completamente seguro</p>
+
+    </section>
+
+    <footer>
+        <h4>© 2022 Blog Mágico - Todos los Derechos Reservados</h4>
+    </footer>
+
+
+     <!-- Swiper JS -->
+     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+     <!-- Initialize Swiper -->
+     <script>
+       var swiper = new Swiper(".mySwiper", {
+         slidesPerView: 1,
+         spaceBetween: 30,
+         loop: true,
+         pagination: {
+           el: ".swiper-pagination",
+           clickable: true,
+         },
+         navigation: {
+           nextEl: ".swiper-button-next",
+           prevEl: ".swiper-button-prev",
+         },
+       });
+     </script>
+
+     <!--Menu-->
+    <script>
+        var bottom = document.getElementById("btn-menu");
+        
+
+        bottom.addEventListener('click', function(){
+            var header = document.querySelector(".menu");
+            header.classList.toggle("click")
+        })
+    </script>
+</body>
+</html>

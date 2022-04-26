@@ -93,6 +93,14 @@ input[type="radio"] {
   padding: 0px 20px;
 }
 
+.post span a {
+  color: #772fe4;
+}
+
+.post span a:hover {
+  opacity: .6;
+}
+
 .ctn-tag {
   width: 100%;
   display: -webkit-box;
@@ -113,10 +121,16 @@ input[type="radio"] {
   cursor: default;
 }
 
+.post a {
+  text-decoration: none;
+}
+
 .post button {
+  display: block;
+  margin: 0 auto;
   margin-top: 20px;
-  margin-left: 20px;
-  padding: 10px 50px;
+  padding: 10px 20px;
+  width: 80%;
   font-size: 16px;
   background: #bc98f3;
   color: #fff;
@@ -163,6 +177,7 @@ input[type="radio"] {
   .posts {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
+    padding: 0;
   }
 }
 
